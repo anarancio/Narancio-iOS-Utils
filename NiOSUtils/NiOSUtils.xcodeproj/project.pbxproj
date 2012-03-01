@@ -16,6 +16,8 @@
 		E07CAD3C14FFE4A300EEE1C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E07CAD3B14FFE4A300EEE1C3 /* ViewController.m */; };
 		E07CAD3F14FFE4A300EEE1C3 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E07CAD3D14FFE4A300EEE1C3 /* ViewController_iPhone.xib */; };
 		E07CAD4214FFE4A300EEE1C3 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E07CAD4014FFE4A300EEE1C3 /* ViewController_iPad.xib */; };
+		E07CAD4B14FFE8D800EEE1C3 /* NUImageLink.m in Sources */ = {isa = PBXBuildFile; fileRef = E07CAD4A14FFE8D800EEE1C3 /* NUImageLink.m */; };
+		E07CAD4E14FFEF5E00EEE1C3 /* testImage.png in Resources */ = {isa = PBXBuildFile; fileRef = E07CAD4D14FFEF5E00EEE1C3 /* testImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,9 @@
 		E07CAD3B14FFE4A300EEE1C3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E07CAD3E14FFE4A300EEE1C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		E07CAD4114FFE4A300EEE1C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		E07CAD4914FFE8D800EEE1C3 /* NUImageLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUImageLink.h; sourceTree = "<group>"; };
+		E07CAD4A14FFE8D800EEE1C3 /* NUImageLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUImageLink.m; sourceTree = "<group>"; };
+		E07CAD4D14FFEF5E00EEE1C3 /* testImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +84,8 @@
 		E07CAD2E14FFE4A300EEE1C3 /* NiOSUtils */ = {
 			isa = PBXGroup;
 			children = (
+				E07CAD4C14FFEF5200EEE1C3 /* resources */,
+				E07CAD4814FFE8BB00EEE1C3 /* source */,
 				E07CAD3714FFE4A300EEE1C3 /* AppDelegate.h */,
 				E07CAD3814FFE4A300EEE1C3 /* AppDelegate.m */,
 				E07CAD3A14FFE4A300EEE1C3 /* ViewController.h */,
@@ -99,6 +106,23 @@
 				E07CAD3614FFE4A300EEE1C3 /* NiOSUtils-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E07CAD4814FFE8BB00EEE1C3 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				E07CAD4914FFE8D800EEE1C3 /* NUImageLink.h */,
+				E07CAD4A14FFE8D800EEE1C3 /* NUImageLink.m */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+		E07CAD4C14FFEF5200EEE1C3 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				E07CAD4D14FFEF5E00EEE1C3 /* testImage.png */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +179,7 @@
 				E07CAD3314FFE4A300EEE1C3 /* InfoPlist.strings in Resources */,
 				E07CAD3F14FFE4A300EEE1C3 /* ViewController_iPhone.xib in Resources */,
 				E07CAD4214FFE4A300EEE1C3 /* ViewController_iPad.xib in Resources */,
+				E07CAD4E14FFEF5E00EEE1C3 /* testImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +193,7 @@
 				E07CAD3514FFE4A300EEE1C3 /* main.m in Sources */,
 				E07CAD3914FFE4A300EEE1C3 /* AppDelegate.m in Sources */,
 				E07CAD3C14FFE4A300EEE1C3 /* ViewController.m in Sources */,
+				E07CAD4B14FFE8D800EEE1C3 /* NUImageLink.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

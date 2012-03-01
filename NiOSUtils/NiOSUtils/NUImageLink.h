@@ -10,4 +10,7 @@
 
 @interface NUImageLink : UIImageView
 
+@property(weak, nonatomic) id observer;
+@property(readwrite) SEL selector;
+
 @end

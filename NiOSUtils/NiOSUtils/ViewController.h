@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NUImageLink.h"
 
 @interface ViewController : UIViewController
+
+@property(strong, nonatomic) IBOutlet NUImageLink *img;
+
+-(void) imageClicked;
 
 @end

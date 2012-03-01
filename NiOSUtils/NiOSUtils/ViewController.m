@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @implementation ViewController
+@synthesize img;
 
 - (void)didReceiveMemoryWarning
 {
@@ -21,7 +22,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    //init image selector
+    img.observer = self;
+    img.selector = @selector(imageClicked);
+}
+
+-(void) imageClicked {
+    NSLog(@"Image clicked");
 }
 
 - (void)viewDidUnload
