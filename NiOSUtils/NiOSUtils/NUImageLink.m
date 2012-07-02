@@ -18,7 +18,7 @@
 - (void) touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event {
     if (type == NUIImageLinkURLType) {
         if(self.url) {
-            
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.url]];
         } else {
             NSLog(@"%@", @"NUImageLink of type NUImageLinkURLType can't have an empty url");
             [NSException raise:@"NUImageLink of type NUImageLinkURLType can't have an empty url" format:@"NUImageLink of type NUImageLinkURLType can't have an empty url"];   

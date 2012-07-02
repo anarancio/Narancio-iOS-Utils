@@ -25,8 +25,9 @@
 	
     //init image selector
     img.observer = self;
-    img.type = NUIImageLinkSelectorType;
-    img.selector = @selector(imageClicked);
+    img.type = NUIImageLinkURLType;
+    img.url = @"http://www.apple.com";
+    //img.selector = @selector(imageClicked);
 }
 
 -(void) imageClicked {
