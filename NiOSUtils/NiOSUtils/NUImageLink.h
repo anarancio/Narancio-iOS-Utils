@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+    NUIImageLinkURLType,
+    NUIImageLinkSelectorType
+} NUIImageLinkType;
+
 @interface NUImageLink : UIImageView
 
 @property(weak, nonatomic) id observer;
+@property(weak, nonatomic) NSString *url;
 @property(readwrite) SEL selector;
+@property(readwrite) NUIImageLinkType type;
 
 @end

@@ -9,14 +9,32 @@
 #import "NUImageLink.h"
 
 @implementation NUImageLink
-@synthesize observer, selector;
+@synthesize observer, selector, type, url;
 
 - (void)awakeFromNib {
     [self setUserInteractionEnabled:YES];
 }
 
 - (void) touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event {
-    [observer performSelector:selector];
+    if (type == NUIImageLinkURLType) {
+        if(self.url) {
+            
+        } else {
+            NSLog(@"%@", @"NUImageLink of type NUImageLinkURLType can't have an empty url");
+            [NSException raise:@"NUImageLink of type NUImageLinkURLType can't have an empty url" format:@"NUImageLink of type NUImageLinkURLType can't have an empty url"];   
+        }
+    } else if (type == NUIImageLinkSelectorType) {
+        if (selector) {
+            [observer performSelector:selector];
+        } else {
+            NSLog(@"%@", @"NUImageLink of type NUIImageLinkSelectorType can't have an empty selector");
+            [NSException raise:@"NUImageLink of type NUIImageLinkSelectorType can't have an empty selector" format:@"NUImageLink of type NUIImageLinkSelectorType can't have an empty selector"];
+        }
+    } else {
+        // the type of the image link is mandatory
+        NSLog(@"%@", @"Invalid NUImageLinkType");
+        [NSException raise:@"You must set the type of the NUImageLink" format:@"Invalid NUImageLinkType"];
+    }
 }
 
 @end

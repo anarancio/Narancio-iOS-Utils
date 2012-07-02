@@ -25,6 +25,7 @@
 	
     //init image selector
     img.observer = self;
+    img.type = NUIImageLinkSelectorType;
     img.selector = @selector(imageClicked);
 }
 
