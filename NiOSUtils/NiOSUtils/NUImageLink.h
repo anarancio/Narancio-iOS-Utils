@@ -13,7 +13,9 @@ typedef enum {
     NUIImageLinkSelectorType
 } NUIImageLinkType;
 
-@interface NUImageLink : UIImageView
+@interface NUImageLink : UIImageView {
+    UIView *shadow;
+}
 
 @property(weak, nonatomic) id observer;
 @property(weak, nonatomic) NSString *url;
